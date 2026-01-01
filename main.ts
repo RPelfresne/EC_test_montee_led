@@ -18,7 +18,7 @@ for (let index = 0; index < montee_1; index++) {
 strip.shift(-1)
 basic.pause(2000)
 for (let index = 0; index < descente_1; index++) {
-    strip.setPixelColor(59, neopixel.colors(NeoPixelColors.Black))
+    strip.setPixelColor(90, neopixel.colors(NeoPixelColors.Black))
     basic.pause(randint(500, 800))
     strip.show()
     strip.shift(-1)
