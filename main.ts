@@ -1,10 +1,10 @@
 basic.showIcon(IconNames.Yes)
 let nb_leds = 130
-let montee_1 = 60
+let montee_1 = 90
 let dureeMontee = 10000
 let strip = neopixel.create(DigitalPin.P1, nb_leds, NeoPixelMode.RGB)
 let descente_1 = 10
-let montee_2 = 81
+let montee_2 = 51
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
 strip.show()
 basic.showIcon(IconNames.Heart)
