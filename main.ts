@@ -1,6 +1,7 @@
 basic.showIcon(IconNames.Yes)
 let nb_leds = 130
 let montee_1 = 90
+let montee_1bis = 5
 let dureeMontee = 10000
 let strip = neopixel.create(DigitalPin.P1, nb_leds, NeoPixelMode.RGB)
 let descente_1 = 10
@@ -15,10 +16,16 @@ for (let index = 0; index < montee_1; index++) {
     basic.pause(randint(50, 200))
     strip.shift(1)
 }
+for (let index = 0; index < montee_1bis; index++) {
+    strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Blue))
+    strip.show()
+    basic.pause(randint(1000, 3000))
+    strip.shift(1)
+}
 strip.shift(-1)
 basic.pause(2000)
 for (let index = 0; index < descente_1; index++) {
-    strip.setPixelColor(90, neopixel.colors(NeoPixelColors.Black))
+    strip.setPixelColor(95, neopixel.colors(NeoPixelColors.Black))
     basic.pause(randint(500, 800))
     strip.show()
     strip.shift(-1)
