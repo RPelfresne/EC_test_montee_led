@@ -2,7 +2,7 @@ basic.showIcon(IconNames.Yes)
 let nb_leds = 130
 let montee_1 = 60
 let dureeMontee = 10000
-let strip = neopixel.create(DigitalPin.P0, nb_leds, NeoPixelMode.RGB)
+let strip = neopixel.create(DigitalPin.P1, nb_leds, NeoPixelMode.RGB)
 let descente_1 = 10
 let montee_2 = 81
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
